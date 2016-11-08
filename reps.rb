@@ -1,10 +1,4 @@
-# write your reps here
-# makes sure to either `p my_output` or `puts my_output`.
-# `p _variablename_` prints the full Object
-# `puts _variablename_` prints the Object.to_s (.toString())
-# to run, just `ruby reps.rb`
-
-
+ 
 # Round 1 
 # Write a function lengths that accepts a single parameter as an argument, namely an array of strings
 # The function should return an array of numbers. 
@@ -69,19 +63,40 @@ p " - - - - - - - - - - - - - - - - "
 
 # or 
 
-class Wordreverse 
+class Word_reverse 
 	def initialize(string)
 		p string.split.reverse.join(' ')
 	end
 end	
 
-@lloyd = Wordreverse.new('We got no food we got no jobs our pets heads are falling off')
-@hannibal = Wordreverse.new('I ate his liver with some fava beans and a nice chianti')
+@lloyd = Word_reverse.new('We got no food we got no jobs our pets heads are falling off')
+@hannibal = Word_reverse.new('I ate his liver with some fava beans and a nice chianti')
 
 p " - - - - - - - - - - - - - - - - "
 
 # Round 5
 
+class Letter_reverse
+	def initialize(string)
+		p string.split('').reverse().join('').split(' ').reverse().join(' ')
+	end
+end	
+
+@pi = Letter_reverse.new('Animals have souls I have seen it in their eyes')
+@dale = Letter_reverse.new('Im Dale but you have to call me Dragon')
+
+p " - - - - - - - - - - - - - - - - "
+
+# Round 6
+
+
+class Longest 
+	def initialize(array)
+		p array.max_by(&:length)
+	end
+end 	
+
+@lloyd = Longest.new(['So', 'youre', 'telling', 'me', 'theres', 'a', 'chance'])
 
 
 
