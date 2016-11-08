@@ -21,9 +21,9 @@ class Transmogrifier
 
 end	
 
-p Transmogrifier.new(5, 4, 3)
-p Transmogrifier.new(13, 12, 5)
-p Transmogrifier.new(42, 13, 7)
+Transmogrifier.new(5, 4, 3)
+Transmogrifier.new(13, 12, 5)
+Transmogrifier.new(42, 13, 7)
 
 p " - - - - - - - - - - - - - - - - "
 
