@@ -54,6 +54,21 @@ end
 
 letter_reverse("like feels dinner TV a what know I Now")
 
+#6
+def longest(arr)
+	longest = ""
+
+	arr.each do |word|
+	 if word.length > longest.length
+	 	longest = word
+	 	end
+	 end
+	 puts longest	
+
+end
+
+longest(["Nothing" , "takes", "the", "taste", "out", "of", "peanut", "butter", "quite", "like", "unrequited", "love"])
+
 
 
 
