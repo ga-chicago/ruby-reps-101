@@ -48,6 +48,11 @@ end
 word_reverse("like feels dinner TV a what know I Now")
 
 #5
+def letter_reverse(string)
+	puts string.reverse
+end
+
+letter_reverse("like feels dinner TV a what know I Now")
 
 
 
