@@ -1,5 +1,13 @@
-# write your reps here
-# makes sure to either `p my_output` or `puts my_output`.
-# `p _variablename_` prints the full Object
-# `puts _variablename_` prints the Object.to_s (.toString())
-# to run, just `ruby reps.rb`
+#1
+def lengths(array)
+	words_length = []
+
+	array.each do |word|
+	 words_length.push(word.length)
+	end
+
+	p words_length
+	
+end
+
+lengths(["hello", "what", "is", "up", "dude"])
