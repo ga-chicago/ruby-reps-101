@@ -72,11 +72,24 @@ def toonify(accent, sentence)
 	end
 end
 
-toonify("daffy", "this is awesome")
+toonify("daffy", "this is awesome") 
 toonify("elmer", "you are really cool")
 
+#ROUND 4
+# Write a function wordReverse that accepts a single argument, 
+# a string. The method should return a string with the order 
+# of the words reversed. Don't worry about punctuation.
 
+# wordReverse("Now I know what a TV dinner feels like")
+# # => "like feels dinner TV a what know I Now"
 
+def word_reverse(num)
+	p num.split.reverse.join(" ")
+end
+
+word_reverse('I am having a great time')
+
+#ROUND 5
 
 
 
