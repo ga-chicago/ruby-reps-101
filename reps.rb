@@ -89,7 +89,7 @@ end
 
 word_reverse('I am having a great time')
 
-#ROUND 5***
+#ROUND 5*****
 # Write a function letterReverse that accepts a single argument, 
 # a string. The function should maintain the order of words in 
 # the string but reverse the letters in each word. 
@@ -106,7 +106,21 @@ def letter_reverse(num)
 end
 
 letter_reverse('I am having a gret time')
-#=>
+#=>"emit terg a gnivah ma I"
+
+#ROUND 6*****
+# Write a function longest that accepts a single argument, 
+# an array of strings. The method should return the longest 
+# word in the array. In case of a tie, the method should 
+# return either.
+
+# longest(["oh", "good", "grief"]) # => "grief"
+# longest(["Nothing" , "takes", "the", "taste", "out", "of", "peanut", "butter", "quite", "like", "unrequited", "love"])
+# # => "unrequited"
+
+def longest(arr)
+	p arr.map
+end
 
 
 
