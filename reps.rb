@@ -11,7 +11,7 @@ array_numbers = []
 
 array_strings.each do |item|
 	array_numbers.push(item.length)
-	if (array_strings.length == array_numbers.length)
+	if array_strings.length == array_numbers.length
 		p array_numbers
 	end
 end
@@ -27,3 +27,36 @@ p transmogrifier 13, 12, 5 #92389579776
 p transmogrifier 42, 13, 7 #14466001271480793216
 
 #problem 3
+
+def toonify accent, sentence
+	if accent == "daffy"
+		array = sentence.split("")
+		final = array.length - 1
+		for i in 0..final do
+			if array[i] == "s"
+				array[i] = "th"
+			end
+		end
+		sentence = array.join
+	elsif accent == "elmer"
+		array = sentence.split("")
+		final = array.length - 1
+		for i in 0..final do
+			if array[i] == "r"
+				array[i] = "w"
+			end
+		end
+		sentence = array.join
+	end
+end
+
+p toonify "daffy", "so you smell like sausage"
+
+#problem 4
+def word_reverse string
+	string = string.split(" ").reverse.join(" ")
+end
+
+p word_reverse "Now I know what a TV dinner feels like"
+
+#problem 5
