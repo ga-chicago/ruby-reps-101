@@ -60,3 +60,24 @@ end
 p word_reverse "Now I know what a TV dinner feels like"
 
 #problem 5
+def letter_reverse string
+	string = string.reverse.split(" ").reverse.join(" ")
+end
+
+p letter_reverse "Now I know what a TV dinner feels like"
+
+#problem 6
+def longest array_strings
+	longest_string = array_strings[0]
+	final = array_strings.length - 1
+	for i in 1..final do
+		if array_strings[i].length > longest_string.length
+			longest_string = array_strings[i]
+		else
+			longest_string
+		end
+	end
+	longest_string
+end
+
+p longest ["oh", "good", "grief"]
