@@ -3,3 +3,10 @@
 # `p _variablename_` prints the full Object
 # `puts _variablename_` prints the Object.to_s (.toString())
 # to run, just `ruby reps.rb`
+
+# ROUND 1
+def lengths arr
+	arr.map { |i| i.length}
+end
+
+p lengths ["dog", "mouse", "cats"]
