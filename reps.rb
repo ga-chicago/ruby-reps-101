@@ -45,14 +45,18 @@ toonify("buggs", "so you smell like sausage")
 
 def wordReverse words
 	p words.split(/\W+/).reverse
-
 end
 
 wordReverse("Now I know what a TV dinner feels like")
 
 
-# letterReverse("Now I know what a TV dinner feels like")
-# letterReverse("Put Hans back on the line")
+def letterReverse words
+	splitWords = words.split(/\W+/)
+	p splitWords.map { |word| word.reverse}
+end
+
+letterReverse("Now I know what a TV dinner feels like")
+letterReverse("Put Hans back on the line")
 
 
 
