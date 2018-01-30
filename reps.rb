@@ -21,3 +21,19 @@ end
 p transmogrifier(5, 3, 2)
 p transmogrifier(13, 12, 5)
 p transmogrifier(42, 13, 7)
+
+# ---------Round 3---------
+
+def toonify accent, sentence
+  if(accent === "daffy")
+    sentence.gsub!("s","th")
+    elsif(accent === "elmer")
+      sentence.gsub!("r","w")
+  elsif(accent === accent)
+    return sentence
+  end
+end
+
+p toonify("daffy", "so you smell like sausage")
+p toonify("elmer", "roma was here")
+p toonify("element", "I dont have an accent")
