@@ -53,3 +53,10 @@ def letterReverse string
 end
 
 p letterReverse("reverse this string letter by letter")
+
+# ---------Round 6---------
+
+def longest strArr
+  strArr.max
+end
+p longest(["Nothing" , "takes", "the", "taste", "out", "of", "peanut", "butter", "quite", "like", "unrequited", "love"])
