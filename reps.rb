@@ -56,16 +56,33 @@
 
 # Round 5
 
-def letter_reverse sentence
-	sentenceArray = sentence.split(" ")
-	newArray = []
-	for	i in (0...sentenceArray.length)
-		newArray << sentenceArray[i].reverse
+# def letter_reverse sentence
+# 	sentenceArray = sentence.split(" ")
+# 	newArray = []
+# 	for	i in (0...sentenceArray.length)
+# 		newArray << sentenceArray[i].reverse
+# 	end
+# 	p newArray.join(" ")
+# end
+
+# letter_reverse "Now I know what a TV dinner feels like"
+
+# Round 6
+
+def longest arr
+	longString = ""
+
+	for	i in (0...arr.length)
+		# And anther if statement that if there are identically randomly pick one
+		if arr[i].length > longString.length
+			longString = arr[i]
+		end
 	end
-	p newArray.join(" ")
+	p longString
 end
 
-letter_reverse "Now I know what a TV dinner feels like"
+longest(["Nothing" , "takes", "the", "taste", "out", "of", "peanut", "butter", "quite", "like", "unrequited", "love"])
+
 
 
 
