@@ -41,6 +41,17 @@
 # p toonify("daffy", "so you smell like sausage")
 
 
+# Round 4
+# def word_reverse sentence
+# 	sentenceArray = sentence.split(" ")
+# 	reverseArray = []
+# 	for	i in (0...sentenceArray.length)
+# 		word = sentenceArray.pop
+# 		reverseArray << word
+# 	end
+# 	p reverseArray.join(" ")
+# end
+# word_reverse "This is the sentence"
 
 
 
