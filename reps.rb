@@ -45,9 +45,20 @@
 # p word_reverse "how now brown cow"
 
 
-# ROUND 5
-def letter_reverse str 
-	str.split(" ").each {|i| i.reverse! }.join(" ")
+# # ROUND 5
+# def letter_reverse str 
+# 	str.split(" ").each {|i| i.reverse! }.join(" ")
+# end
+
+# p letter_reverse "Now I know what a TV dinner feels like"
+
+
+# ROUND 6
+def longest strArr
+	strArr.max { |x, y| x.length <=> y.length }
 end
 
-p letter_reverse "Now I know what a TV dinner feels like"
+p longest ['dog', 'cats', 'mouse']
+
+
+
