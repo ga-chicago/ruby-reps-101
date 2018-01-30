@@ -58,6 +58,24 @@ end
 letterReverse("Now I know what a TV dinner feels like")
 letterReverse("Put Hans back on the line")
 
+def longest arrStr
+	wordLength = arrStr.map { |word| word.length}
+	 p wordLength.zip(arrStr).max
+end 
+
+longest([ "oh", "good", "grief"]) # => "grief"
+longest(["Nothing" , "takes", "the", "taste", "out", "of", "peanut", "butter", "quite", "like", "unrequited", "love"])
+# => "unrequited"
+
+
+
+
+
+
+
+
+
+
 
 
 
