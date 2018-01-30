@@ -16,3 +16,10 @@ end
 words = ["hello", "what", "is", "up", "dude"]
 lengths(words)  # => [5, 4, 2, 2, 4]
 
+def transmogrifier (a, b, c)  
+	p (a * b) ** c
+end
+
+transmogrifier(5, 4, 3)
+transmogrifier(13, 12, 5)
+transmogrifier(42, 13, 7)
