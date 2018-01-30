@@ -16,5 +16,8 @@ p lengths(words)
 # ---------Round 2---------
 
 def transmogrifier num1, num2, num3
-
+  ((num1 * num2) ** num3)
 end
+p transmogrifier(5, 3, 2)
+p transmogrifier(13, 12, 5)
+p transmogrifier(42, 13, 7)
