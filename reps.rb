@@ -37,9 +37,17 @@
 # p toonify 'elmer', 'rascally rabbit'
 
 
-# ROUND 4
-def word_reverse str 
-	str.split(" ").reverse.join(" ")
+# # ROUND 4
+# def word_reverse str 
+# 	str.split(" ").reverse.join(" ")
+# end
+
+# p word_reverse "how now brown cow"
+
+
+# ROUND 5
+def letter_reverse str 
+	str.split(" ").each {|i| i.reverse! }.join(" ")
 end
 
-p word_reverse "how now brown cow"
+p letter_reverse "Now I know what a TV dinner feels like"
