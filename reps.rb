@@ -54,9 +54,18 @@
 # word_reverse "This is the sentence"
 
 
+# Round 5
 
+def letter_reverse sentence
+	sentenceArray = sentence.split(" ")
+	newArray = []
+	for	i in (0...sentenceArray.length)
+		newArray << sentenceArray[i].reverse
+	end
+	p newArray.join(" ")
+end
 
-
+letter_reverse "Now I know what a TV dinner feels like"
 
 
 
