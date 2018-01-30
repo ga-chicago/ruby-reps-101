@@ -41,3 +41,19 @@ toonify("daffy", "so you smell like sausage")
 toonify("elmer", "there shoud have been a sentance with more r's")
 toonify("buggs", "so you smell like sausage")
 
+
+
+def wordReverse words
+	p words.split(/\W+/).reverse
+
+end
+
+wordReverse("Now I know what a TV dinner feels like")
+
+
+# letterReverse("Now I know what a TV dinner feels like")
+# letterReverse("Put Hans back on the line")
+
+
+
+
