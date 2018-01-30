@@ -45,3 +45,11 @@ def wordReverse string
   string.split(' ').reverse().join(' ')
 end
 p wordReverse("Reverse my word order!")
+
+# ---------Round 5---------
+
+def letterReverse string
+  string.split('').reverse().join('')
+end
+
+p letterReverse("reverse this string letter by letter")
