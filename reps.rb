@@ -37,3 +37,11 @@ end
 p toonify("daffy", "so you smell like sausage")
 p toonify("elmer", "roma was here")
 p toonify("element", "I dont have an accent")
+
+
+# ---------Round 4---------
+
+def wordReverse string
+  string.split(' ').reverse().join(' ')
+end
+p wordReverse("Reverse my word order!")
