@@ -40,6 +40,7 @@ transmogrifier(42, 13, 7)
 ```
 
 ---
+
 ## Round 3
 
 Write a function called `toonify` that takes two parameters, `accent` and `sentence`.
@@ -50,19 +51,19 @@ Write a function called `toonify` that takes two parameters, `accent` and `sente
 
 
 ```ruby
-
 toonify("daffy", "so you smell like sausage")
 #=> "tho you thmell like thauthage"
-
 ```
+
 ---
+
 ## Round 4
 
-Write a function `wordReverse` that accepts a single argument, a string. The method should return a string with the order of the words reversed. Don't worry
+Write a function `word_reverse` that accepts a single argument, a string. The method should return a string with the order of the words reversed. Don't worry
 about punctuation.
 
 ```ruby
-wordReverse("Now I know what a TV dinner feels like")
+word_reverse("Now I know what a TV dinner feels like")
 # => "like feels dinner TV a what know I Now"
 ```
 
@@ -70,12 +71,12 @@ wordReverse("Now I know what a TV dinner feels like")
 
 ## Round 5
 
-Write a function `letterReverse` that accepts a single argument, a string. The function should maintain the order of words in the string but reverse the letters in each word. Don't worry about punctuation. This will be very similar to round 4 except you won't need to split them with a space.
+Write a function `letter_reverse` that accepts a single argument, a string. The function should maintain the order of words in the string but reverse the letters in each word. Don't worry about punctuation. This will be very similar to round 4 except you won't need to split them with a space.
 
 ```ruby
-letterReverse("Now I know what a TV dinner feels like")
+letter_reverse("Now I know what a TV dinner feels like")
 # => "woN I wonk tahw a VT rennid sleef ekil"
-letterReverse("Put Hans back on the line")
+letter_reverse("Put Hans back on the line")
 # => "tuP snaH kcab no eht enil"
 ```
 ---
@@ -83,7 +84,7 @@ letterReverse("Put Hans back on the line")
 
 Write a function `longest` that accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return either.
 
-```javascript
+```ruby
 longest(["oh", "good", "grief"]) # => "grief"
 longest(["Nothing" , "takes", "the", "taste", "out", "of", "peanut", "butter", "quite", "like", "unrequited", "love"])
 # => "unrequited"
