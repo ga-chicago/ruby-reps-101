@@ -21,17 +21,25 @@
 # p transmogrifier 42, 13, 7
 
 # Round 3
-def toonify accent, sentence
-	if accent == "daffy"
-		sentence.gsub("s","th")
-	elsif accent == "elmer"
-		sentence.tr("r","w")
-	else
-		sentence
-	end
+# def toonify accent, sentence
+# 	if accent == "daffy"
+# 		sentence.gsub("s","th")
+# 	elsif accent == "elmer"
+# 		sentence.tr("r","w")
+# 	else
+# 		sentence
+# 	end
+# end
+
+# p toonify "daffy", "so you smell like sausage"
+# p toonify "elmer", "rascally rabbit"
+
+# Round 4
+def word_reverse str
+	str.split(" ").reverse.join(" ")
 end
 
-p toonify "daffy", "so you smell like sausage"
-p toonify "elmer", "rascally rabbit"
+p word_reverse "Now I know what a TV dinner feels like"
+
 
 
