@@ -42,10 +42,16 @@
 # p word_reverse "Now I know what a TV dinner feels like"
 
 # Round 5
-def letter_reverse str
-	str.split(" ").map{|i| i.reverse}.join(" ")
+# def letter_reverse str
+# 	str.split(" ").map{|i| i.reverse}.join(" ")
+# end
+
+# p letter_reverse "Now I know what a TV dinner feels like"
+
+# Round 6
+def longest strArray
+	strArray.sort{|x,y| y.length <=> x.length}[0]
 end
 
-p letter_reverse "Now I know what a TV dinner feels like"
-
+p longest ["oh", "good","Im the biggest string", "grief", "a", "sdfsdf", "ds"]
 
