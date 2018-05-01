@@ -11,3 +11,14 @@ def lengths arr
 end
 
 lengths ["hello", "what", "is", "up", "dude"]
+
+# -------------ROUND TWO-------------#
+
+def transmogrifier num1, num2, num3
+	num_product = num1 * num2
+	p num_trans = num_product ** num3
+end
+
+transmogrifier 5,3,2
+transmogrifier 13, 12, 5
+transmogrifier 42, 13, 7
