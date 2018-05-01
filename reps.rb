@@ -17,3 +17,30 @@ def lengths arr
 end
 
 p lengths words
+
+
+# ROUND 2
+# Write a Ruby method called transmogrifier This method should accept three arguments, which you can assume 
+# will be numbers. Your method should return the "transmogrified" result
+
+def transmogrifier num1, num2, num3
+	p (num1 * num2) ** num3
+end
+
+transmogrifier(5, 3, 2)
+# ---> 225
+transmogrifier(5, 4, 3)
+# ---> 8000
+transmogrifier(13, 12, 5)
+# ---> 92389579776
+transmogrifier(42, 13, 7)
+# ---> 14466001271480793216
+
+
+
+
+
+
+
+
+
