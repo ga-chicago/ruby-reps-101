@@ -23,6 +23,7 @@ p transmogrifier 13, 12, 5
 p transmogrifier 42, 13, 7
 
 # Round 3
+
 def toonify accent, sentence
 	if accent == "daffy"
 		# use this method to replace more than one character
@@ -36,3 +37,10 @@ end
 
 toonify("daffy", "so you smell like sausage")
 toonify("elmer", "rabbit season")
+
+# Round 4
+
+def word_reverse string 
+	p string.split(" ").reverse!.join(" ")
+end
+word_reverse("Now I know what a TV dinner feels like")
