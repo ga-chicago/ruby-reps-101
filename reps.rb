@@ -22,3 +22,17 @@ p transmogrifier 5, 4, 3
 p transmogrifier 13, 12, 5
 p transmogrifier 42, 13, 7
 
+# Round 3
+def toonify accent, sentence
+	if accent == "daffy"
+		# use this method to replace more than one character
+		p sentence.gsub(/s/, 'th')
+	elsif accent == "elmer"
+		# this method works best for one character
+		p sentence.tr("r", "w")
+	else p sentence
+	end
+end
+
+toonify("daffy", "so you smell like sausage")
+toonify("elmer", "rabbit season")
