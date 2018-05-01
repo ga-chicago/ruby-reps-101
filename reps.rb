@@ -31,3 +31,12 @@ def toonify accent, sentence
 end
 
 p toonify("elmer", "rocks")
+
+def letter_reverse str
+	words = str.split(' ')
+	reversed_words = words.each { |current_word| current_word.reverse! }
+	final_str = reversed_words.join(" ")
+	final_str
+end
+
+p letter_reverse("Now I know what a TV dinner feels like")
