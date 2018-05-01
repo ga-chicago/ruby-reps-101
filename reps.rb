@@ -51,3 +51,18 @@ def letter_reverse string
 	p string.split(" ").reverse_each{|str| str.reverse!}.join(" ")
 end
 letter_reverse("Now I know what a TV dinner feels like")
+
+# Round 6
+# require 'enumerable'
+def longest arr_strings
+	# sorts array from shortest to longest
+	arr_strings.sort!{|a,b| a.length<=>b.length}
+	# we want all of the longest strings returned if there's a tie 
+
+	# sort into groups
+	groups = arr_strings.group_by{|arr| arr.length }
+	# return longest group (will be last group)
+
+	p groups[arr_strings[-1].length]
+end
+longest(["grief", "oh", "good", "fudge"]);
