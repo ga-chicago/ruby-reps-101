@@ -40,3 +40,10 @@ def letter_reverse str
 end
 
 p letter_reverse("Now I know what a TV dinner feels like")
+
+def longest arr
+	arr.max_by(&:length)
+end
+
+p longest(["Nothing" , "takes", "the", "taste", "out", "of", "peanut", "butter", "quite", "like", "unrequited", "love"])
+
