@@ -6,12 +6,12 @@ Fork this repository. Clone down your copy. Add `.rb` files with your solutions.
 ### Learning Objectives... or rather... REPS!!!!
 - ...REPS with creating methods
 - ...REPS with iteration
-- ...REPS with functions on numbers, strings, arrays
+- ...REPS with methods on numbers, strings, arrays
 
 ---
 
 ## Round 1
-Write a function `lengths` that accepts a single parameter as an argument, namely an array of strings. The function should return an array of numbers. Each number in the array should be the length of the corresponding string.
+Write a method `lengths` that accepts a single parameter as an argument, namely an array of strings. The method should return an array of numbers. Each number in the array should be the length of the corresponding string.
 
 ```ruby
 words = ["hello", "what", "is", "up", "dude"]
@@ -22,15 +22,15 @@ lengths(words)  # => [5, 4, 2, 2, 4]
 
 ## Round 2
 
-Write a Ruby function called `transmogrifier`
-This function should accept three arguments, which you can assume will be numbers.
-Your function should return the "transmogrified" result
+Write a Ruby method called `transmogrifier`
+This method should accept three arguments, which you can assume will be numbers.
+Your method should return the "transmogrified" result
 
 The transmogrified result of three numbers is the product (numbers multiplied together) of the first two numbers, raised to the power (exponentially) of the third number.
 
 For example, the transmogrified result of 5, 3, and 2 is `(5 times 3) to the power of 2` is 225.
 
-Use your function to find the following answers.
+Use your method to find the following answers.
 
 
 ```ruby
@@ -43,7 +43,7 @@ transmogrifier(42, 13, 7)
 
 ## Round 3
 
-Write a function called `toonify` that takes two parameters, `accent` and `sentence`.
+Write a method called `toonify` that takes two parameters, `accent` and `sentence`.
 - If `accent` is the string `"daffy"`, return a modified version of `sentence` with all "s" replaced with "th".
 - If the accent is `"elmer"`, replace all "r" with "w".
 - Feel free to add your own accents as well!
@@ -59,7 +59,7 @@ toonify("daffy", "so you smell like sausage")
 
 ## Round 4
 
-Write a function `word_reverse` that accepts a single argument, a string. The method should return a string with the order of the words reversed. Don't worry
+Write a method `word_reverse` that accepts a single argument, a string. The method should return a string with the order of the words reversed. Don't worry
 about punctuation.
 
 ```ruby
@@ -71,7 +71,7 @@ word_reverse("Now I know what a TV dinner feels like")
 
 ## Round 5
 
-Write a function `letter_reverse` that accepts a single argument, a string. The function should maintain the order of words in the string but reverse the letters in each word. Don't worry about punctuation. This will be very similar to round 4 except you won't need to split them with a space.
+Write a method `letter_reverse` that accepts a single argument, a string. The method should maintain the order of words in the string but reverse the letters in each word. Don't worry about punctuation. This will be very similar to round 4 except you won't need to split them with a space.
 
 ```ruby
 letter_reverse("Now I know what a TV dinner feels like")
@@ -82,7 +82,7 @@ letter_reverse("Put Hans back on the line")
 ---
 ## Round 6
 
-Write a function `longest` that accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return either.
+Write a method `longest` that accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return either.
 
 ```ruby
 longest(["oh", "good", "grief"]) # => "grief"
