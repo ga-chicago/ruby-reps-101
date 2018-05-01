@@ -37,6 +37,22 @@ transmogrifier(42, 13, 7)
 # ---> 14466001271480793216
 
 
+# ROUND 3
+# Write a method called toonify that takes two parameters, accent and sentence.
+
+def toonify accent, sentence
+	if accent === "daffy"
+		puts sentence.gsub /[s]/, 'th'
+	elsif accent === "elmer"
+		puts sentence.gsub /[r]/, 'w'
+	else
+		puts sentence
+	end
+end
+
+toonify "daffy", "sounds like a super duper success"
+toonify "elmer", "really want some rocky road ice cream"
+toonify "minnesotan", "don't you know"
 
 
 
