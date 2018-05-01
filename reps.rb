@@ -44,3 +44,10 @@ def word_reverse string
 	p string.split(" ").reverse!.join(" ")
 end
 word_reverse("Now I know what a TV dinner feels like")
+
+# Round 5
+
+def letter_reverse string
+	p string.split(" ").reverse_each{|str| str.reverse!}.join(" ")
+end
+letter_reverse("Now I know what a TV dinner feels like")
