@@ -17,3 +17,17 @@ def transmorgrifier a, b, c
 end
 
 p transmorgrifier 5, 3, 2
+
+def toonify accent, sentence
+	if accent == "daffy"
+		sentence.gsub!(/[s]/, "th")
+		return sentence
+	elsif accent == "elmer"
+		sentence.gsub!(/[r]/, "w")
+		return sentence
+	else
+		return sentence
+	end
+end
+
+p toonify("elmer", "rocks")
