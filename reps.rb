@@ -48,7 +48,14 @@ end
 word_reverse "My name is Shrek and I live in a swamp."
 
 
+# -------------ROUND FIVE-------------#
 
+def letter_reverse string
+	p string.split(" ").each {|i| i.reverse! }.join(" ")
+	
+end
+
+letter_reverse "My name is Donkey and I live with Shrek."
 
 
 
