@@ -39,7 +39,13 @@ toonify "daffy", "so you smell like sausage"
 toonify "elmur", "what a waste of water"
 toonify "bugs", "i like carrots"
 
+# -------------ROUND FOUR-------------#
 
+def word_reverse string
+	p string.split(" ").reverse.join(" ")
+end
+
+word_reverse "My name is Shrek and I live in a swamp."
 
 
 
