@@ -11,3 +11,9 @@ def lengths arr
 end
 
 p lengths ['I', 'want', 'some', 'pizza', 'immediately']
+
+def transmorgrifier a, b, c
+	(a * b) ** c
+end
+
+p transmorgrifier 5, 3, 2
