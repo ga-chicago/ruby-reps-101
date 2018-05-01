@@ -57,6 +57,14 @@ end
 
 letter_reverse "My name is Donkey and I live with Shrek."
 
+# -------------ROUND SIX-------------#
+
+def longest arr
+	p arr.max_by(&:length)
+end
+
+longest ["Nothing" ,'thisisareallyeffinglongwordwoahlongwordholycatsmeooooooowwww' "takes", "the", "taste", "out", "of", "peanut", "butter", "quite", "like", "unrequited", "love"]
+
 
 
 
