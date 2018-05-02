@@ -81,7 +81,7 @@ p word_reverse "Now I know what a TV dinner feels like"
 #Write a method letter_reverse that accepts a single argument, a string. The method should maintain the order of words in the string but reverse the letters in each word. Don't worry about punctuation. This will be very similar to round 4 except you won't need to split them with a space.
 
 def letter_reverse str1
-	str1.split("").join("").reverse
+	str1.split("").reverse().join("").split(" ").reverse().join(" ")
 end
 
 p letter_reverse "Now I know what a TV dinner feels like"
