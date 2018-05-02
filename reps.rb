@@ -79,7 +79,7 @@ def letter_reverse str
 
 	# reverse each word in the array
 	reverse_words = arr.each { |current_word| current_word.reverse! }
-	
+
 	#  turn array back into string
 	string = reverse_words.join(' ')
 
@@ -89,6 +89,15 @@ end
 letter_reverse "hello my name is mace"
 
 
+# ROUND 6
+# Write a method longest that accepts a single argument, an array of strings. The method should return 
+# the longest word in the array. In case of a tie, the method should return either.
+
+def longest arr
+	p arr.max_by(&:length)
+end
+
+longest(["oh", "good", "grief"])
 
 
 
