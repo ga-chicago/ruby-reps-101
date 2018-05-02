@@ -69,6 +69,27 @@ end
 word_reverse "do or do not there is no try"
 
 
+# ROUND 5
+# Write a method letter_reverse that accepts a single argument, a string. The method should maintain 
+# the order of words in the string but reverse the letters in each word. Don't worry about punctuation. 
+# This will be very similar to round 4 except you won't need to split them with a space.
+def letter_reverse str
+	# turn string into array
+	arr = str.split(' ')
+
+	# reverse each word in the array
+	reverse_words = arr.each { |current_word| current_word.reverse! }
+	
+	#  turn array back into string
+	string = reverse_words.join(' ')
+
+	p string
+end
+
+letter_reverse "hello my name is mace"
+
+
+
 
 
 
