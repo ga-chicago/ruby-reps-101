@@ -55,6 +55,18 @@ toonify "elmer", "really want some rocky road ice cream"
 toonify "minnesotan", "don't you know"
 
 
+# ROUND 4
+# Write a method word_reverse that accepts a single argument, a string. The method should 
+# return a string with the order of the words reversed. Don't worry about punctuation.
+def word_reverse str
+	# turn string into array
+	arr = str.split(' ')
+
+	# reverse array & turn array back into string
+	p arr.reverse.join(" ")
+end
+
+word_reverse "do or do not there is no try"
 
 
 
